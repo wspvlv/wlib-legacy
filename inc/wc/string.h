@@ -67,33 +67,11 @@
  * 
  * Coverts a null-terminated one-byte string to a 32-byte signed integer
  */
-<<<<<<< HEAD
 #ifdef USE_STDLIB
 
 #	if sizeof(int)>=4
 #		define WL_STDLIB_S2I(str) atoi(str)
 #		define WL_STDLIB_S2U(str) (wl_U32)atoi(str)
-=======
-#	ifdef USE_STDLIB
-
-#		if WL_INB >= 32
-#			define WL_STDLIB_S2I(str) atoi(str)
-#			define WL_STDLIB_S2U(str) (wl_U32)atoi(str)
-#		else
-#			define WL_STDLIB_S2I(str) atol(str)
-#			define WL_STDLIB_S2U(str) strtol(str)
-#		endif
-
-#		define wl_s2i(str, flags) (					\
-			flags&0x3								\
-			? (	str[0]=='+'							\
-				? wl_s2u(str+1, flags)				\
-				: (	str[0]=='-'						\
-					? -wl_s2u(str+1, flags)			\
-					: wl_s2u(str, flags)	)	)	\
-			: WL_STDLIB_S2I(str)					\
-		)
->>>>>>> 27c8a5a99a709070b228503b95d8cabcce50ceef
 #	else
 #		define WL_STDLIB_S2I(str) atol(str)
 #		define WL_STDLIB_S2U(str) strtol(str)

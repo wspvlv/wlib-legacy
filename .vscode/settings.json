@@ -23,6 +23,10 @@
 		"variant": "c",
 		"tuple": "c",
 		"char.h": "c",
-		"random": "c"
+		"random": "c",
+		"stnd.h": "c",
+		"lang.h": "c",
+		"damo.h": "c",
+		"climits": "c"
 	}
 }

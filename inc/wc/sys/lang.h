@@ -10,6 +10,7 @@
 #define VR_C99		199901L
 #define VR_C11		201112L
 #define VR_C18		201710L
+#define VR_C23		999999L
 
 #ifdef __STDC_VERSION__
 #define	LG_C		__STDC_VERSION__
@@ -26,8 +27,13 @@
 #define VR_CPP11	201103L
 #define VR_CPP14	201402L
 #define VR_CPP17	201703L
+#define VR_CXX98	199711L
+#define VR_CXX11	201103L
+#define VR_CXX14	201402L
+#define VR_CXX17	201703L
 
 #define LG_CPP		__cplusplus
+#define LG_CXX		__cplusplus
 
 #endif  /* C++ Language */
 
