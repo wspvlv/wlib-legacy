@@ -619,5 +619,14 @@ Below lies a reference table for type size in bits macros and type limit values 
 ## 6. Memory management
 ### 6.1. `MChunk` &mdash; Memory Chunk
 
+<table>
+  <body>
+    <tr>
+      <td colspan="1">1</td>
+      <td colspan="63">63</td>
+    </tr>
+  </body>
+</table>
+
 ## 7. Array manipulation
 ## 8. String manipulation
