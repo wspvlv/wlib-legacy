@@ -2,6 +2,7 @@
   To do:
   Add character range explanations
  -->
+<link rel="stylesheet" href="github-markdown.css">
 
 # WLib Documentation
 # 0. Introduction
@@ -733,15 +734,6 @@ Below lies a reference table for type size in bits macros and type limit values 
       <td style="text-align:center">ILP64 | SILP64</td>
       <td style="text-align:center"><code>allocated</code></td>
       <td style="text-align:center"colspan="2"><code>pt2next</code></td>
-    </tr>
-  </body>
-</table>
-
-<table>
-  <body>
-    <tr>
-      <td colspan="1">1</td>
-      <td colspan="63">63</td>
     </tr>
   </body>
 </table>
