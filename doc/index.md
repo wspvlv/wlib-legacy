@@ -695,7 +695,7 @@ Below lies a reference table for type size in bits macros and type limit values 
 
 32-bit
 <table>
-  <body>
+  <tbody>
     <tr>
       <td style="text-align:center">offset&rightarrow;<br>&downarrow;data model</td>
       <td style="text-align:center">0</td>
@@ -713,12 +713,12 @@ Below lies a reference table for type size in bits macros and type limit values 
       <td style="text-align:center"><code>pt2nextHigh</code></td>
       <td style="text-align:center"><code>pt2nextLow</code></td>
     </tr>
-  </body>
+  </tbody>
 </table>
 
 64-bit
 <table>
-  <body>
+  <tbody>
     <tr>
       <td style="text-align:center">offset&rightarrow;<br>&downarrow;data model</td>
       <td style="text-align:center">0</td>
@@ -736,7 +736,7 @@ Below lies a reference table for type size in bits macros and type limit values 
       <td style="text-align:center"><code>allocated</code></td>
       <td style="text-align:center"colspan="2"><code>pt2next</code></td>
     </tr>
-  </body>
+  </tbody>
 </table>
 
 ## 7. Array manipulation
