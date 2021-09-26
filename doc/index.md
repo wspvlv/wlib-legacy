@@ -214,6 +214,7 @@ Below lies a reference table for type size in bits macros and type limit values 
 |`U64` and `u64`     |`U64B`|`U64N`         |`U64X`         |
 |`UMax` and `umax`   |`UMB` |`UMN`          |`UMX`          |
 |`Pt` and `pt`       |`PTB` |`PTN`          |`PTX`          |
+
 ## 2.5. Support check
 # 3. Error handling
 # 4. Character manipulation &lt;char.h&gt;
