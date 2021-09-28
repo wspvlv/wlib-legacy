@@ -5,16 +5,24 @@
 <link rel="stylesheet" href="github-markdown.css">
 
 # WLib Documentation
+
 # 0. Introduction
+
 # 1. System information
 ## 1.1. Architecture
+
 ## 1.2. Operating system
+
 ## 1.3. Data models
+
 ## 1.4. Endianness
+
 ## 1.5. Compiler
+
 ## 1.6. Language Standard
+
 ## 1.7. Standard Version
-To be written
+
 # 2. Types &lt;types.h&gt;
 ## 2.1. Fixed-size integer types
 
@@ -143,7 +151,6 @@ A table for integer type reference. Size describes how many bits the library tri
 
 typedef float   wl_f32, wl_F32;
 typedef double  wl_f64, wl_F64;
-
 ```
 
 `F32` or `f32` &mdash; a real floating-point type that is at least 32-bits wide.
@@ -177,6 +184,7 @@ typedef /* type */	wl_pt, wl_Pt;
 `Ch` or `ch` type is a character or a byte type.
 
 `Pt` or `pt` &mdash; the pointer type. An integer type large enough to hold the reperefernce to an object. This is intended to be used for casting the pointer value into an arithmetic type for pointer arithmetic. For example, take the next piece of code. In order to use arithmetic operations using pointers, we would need to convert then into an arithmetical type. After calculations, we would probably want the result value to be converted back into a pointer value.
+
 ```c
 void* foo(void* p) {
 	return (void*)((Pt)p+1);
@@ -216,14 +224,19 @@ Below lies a reference table for type size in bits macros and type limit values 
 |`Pt` and `pt`       |`PTB` |`PTN`          |`PTX`          |
 
 ## 2.5. Support check
+
 # 3. Error handling
+
 # 4. Character manipulation &lt;char.h&gt;
 ## 4.1. Boolean functions
+
 ### 4.1.1. `cia` &mdash; Character Is Alphanumeric character
+
 ```c
 #define cia wl_cia
 #define wl_cia(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -262,10 +275,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.2. `cic` &mdash; Character Is Control character
+
 ```c
 #define cic wl_cic
 #define wl_cic(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -304,10 +319,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.3. `cid` &mdash; Character Is Digit character
+
 ```c
 #define cid wl_cid
 #define wl_cid(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -345,10 +362,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.4. `cie` &mdash; Character Is Extended ASCII character
+
 ```c
 #define cie wl_cie
 #define wl_cie(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -386,10 +405,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.5. `cil` &mdash; Character Is Letter character
+
 ```c
 #define cil wl_cil
 #define wl_cil(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -428,10 +449,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.6. `cill` &mdash; Character Is Lowercase Letter character
+
 ```c
 #define ciul wl_cill
 #define wl_cill(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -469,10 +492,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.7. `ciul` &mdash; Character Is Uppercase Letter character
+
 ```c
 #define ciul wl_ciul
 #define wl_ciul(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -510,10 +535,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.8. `cis` &mdash; Character Is Symbol character
+
 ```c
 #define cis wl_cis
 #define wl_cis(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -551,10 +578,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.1.9. `ciw` &mdash; Character Is Whitespace character
+
 ```c
 #define ciw wl_ciw
 #define wl_ciw(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -592,7 +621,6 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ## 4.2. Convertion functions
-
 ### Digit to Character convertion table
 
 | Digit  | **00**| **01**| **02**| **03**| **04** | **05** | **06**| **07**| **08**| **09**                 | **0A**| **0B**                | **0C**| **0D** | **0E**| **0F**|
@@ -605,10 +633,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 | **50** | `'='` | `'>'` | `'?'` | `'@'` | `'['`  | `'\\'` | `']'` | `'^'` | `'_'` | <code>'&grave;'</code> | `'{'` | <code>'&vert;'</code> | `'}'` | `'~'`  | `' '` | `DEL` |
 
 ### 4.2.1. `c2d` &mdash; Charater To Digit
+
 ```c
 #define c2d wl_c2d
 #define wl_c2d(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -647,10 +677,12 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ### 4.2.2. `d2c` &mdash; Digit To Charater
+
 ```c
 #define d2c wl_d2c
 #define wl_d2c(a) /* function body */
 ```
+
 <table>
   <tbody>
     <tr>
@@ -690,11 +722,14 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 ## 5. Mathematics
+
 ## 6. Memory management
 ### 6.1. `MChunk` &mdash; Memory Chunk
+
 `MChunk` is a structure defined in `<memory.h>` that functions as a header of a segment allocated by `wl_mal()`.
 
 32-bit
+
 <table>
   <tbody>
     <tr>
@@ -718,22 +753,25 @@ Below lies a reference table for type size in bits macros and type limit values 
 </table>
 
 64-bit
+
 <table>
+  <thead>
+    <tr>
+      <th style="text-align:center">offset&rightarrow;<br>&downarrow;data model</td>
+      <th style="text-align:center">0</td>
+      <th style="text-align:center">1</td>
+      <th style="text-align:center">32</td>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td style="text-align:center">offset&rightarrow;<br>&downarrow;data model</td>
-      <td style="text-align:center">0</td>
-      <td style="text-align:center">1</td>
-      <td style="text-align:center">32</td>
-    </tr>
-      <tr>
-      <td style="text-align:center">LLP64 | LP64</td>
+      <th style="text-align:center">LLP64 | LP64</td>
       <td style="text-align:center"><code>allocated</code></td>
       <td style="text-align:center"><code>pt2nextHigh</code></td>
       <td style="text-align:center"><code>pt2nextLow</code></td>
     </tr>
     <tr>
-      <td style="text-align:center">ILP64 | SILP64</td>
+      <th style="text-align:center">ILP64 | SILP64</td>
       <td style="text-align:center"><code>allocated</code></td>
       <td style="text-align:center"colspan="2"><code>pt2next</code></td>
     </tr>
